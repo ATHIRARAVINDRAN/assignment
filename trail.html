@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and signup page</title>
+    <link rel="stylesheet" href="try.css">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="https://https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* form container */
+.form-container {
+  background-color: white;
+  width: 500px;
+  height: 300px;
+  margin: 70px auto;
+  box-shadow: 0px 3px 7px 3px rgba(0,0,0,0.2);
+}
+#error {
+  color: red;
+  text-align: center;
+}
+.form-container h3 {
+  text-align: center;
+  padding: 8px;
+}
+.form-grp {
+  padding: 8px;
+  position: relative;
+}
+ input[type = text], input[type = password] {
+padding: 8px;
+width: 100%;
+border: 1px solid lightgray;
+border-radius: 4px;
+}
+input[type = text]:focus, input[type = password]:focus {
+  outline: 0;
+}
+
+.pass-link{
+  margin-top: 5px;
+}
+
+input[type = submit]
+{
+  background-color: darkblue;
+  width: 100%;
+  color: antiquewhite;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px;
+
+}
+.form-grp .fa {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  display: none;
+
+}
+.fa-times 
+{
+  color: red;
+}
+.fa-check {
+  color: green;
+
+}
+</style>
+</head>
+<body>
+    <a href="http://127.0.0.1:5500/sec/index.html ">go back</a>
+
+       <form class="form-container" onsubmit="return validate() ">
+         <p id="error"></p>      
+        <h3>Login</h3>
+        <div class="form-grp">
+            <label for="username">Username</label> 
+            <br>
+            <input type="text" name="username" placeholder="Username" id="user">
+            <i class="fa fa-times u_times"></i>
+            <i class="fa fa-check u_check"></i>
+        </div>
+        
+        <div class="form-grp">
+            <label for="password">Password</label> 
+            <br> 
+            <input type="password" name="password" placeholder="Password" id="pass">
+            <i class="fa fa-times p_times"></i>
+            <i class="fa fa-check p_check"></i>
+        </div>
+        <div class="pass-link">
+            <a href="#">Forgot password?</a>
+         </div>
+         
+        <div class="form-grp">
+            <input type="submit" name="login-btn" value="Login">
+        </div>
+        <div class="signup-link">
+           <p>Not a member?</p><a href="signup.html">signup now</a>
+         </div>
+        </form>
+        <script type="text/javascript" src="java.js"></script>
+</body>
+</html>
+
+ 
